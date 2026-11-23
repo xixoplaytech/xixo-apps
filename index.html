@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101722">
+  <meta name="description" content="XIXO Apps: aplicativos para música, estudos e produtividade.">
+  <title>XIXO Apps | Aplicativos e soluções</title>
+  <style>
+    :root {
+      --bg: #101722;
+      --card: #1b2636;
+      --blue: #45a3ff;
+      --text: #f5f8fc;
+      --muted: #b5c2d3;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+    header {
+      background: #151e2b;
+      border-bottom: 1px solid #2b394b;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 20px 0;
+    }
+    .brand {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .brand span { color: var(--blue); }
+    .navlinks {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+    .navlinks a:hover { color: var(--blue); }
+    .hero {
+      padding: 75px 0 60px;
+      text-align: center;
+      background: radial-gradient(
+        ellipse at top,
+        #203650 0%,
+        #101722 70%
+      );
+    }
+    .tag {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.15;
+      margin: 16px 0;
+    }
+    .hero p {
+      max-width: 610px;
+      margin: 0 auto 25px;
+      color: var(--muted);
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 23px;
+      background: var(--blue);
+      border-radius: 9px;
+      color: #08121d;
+      font-weight: bold;
+    }
+    section { padding: 50px 0; }
+    h2 { margin: 0 0 10px; }
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 25px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #304057;
+      border-radius: 16px;
+      padding: 25px;
+    }
+    .symbol {
+      font-size: 35px;
+      margin-bottom: 14px;
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .status {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .about {
+      background: #151e2b;
+      border-radius: 16px;
+      padding: 30px;
+    }
+    footer {
+      margin-top: 30px;
+      border-top: 1px solid #2b394b;
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      nav { flex-direction: column; }
+      .navlinks { flex-wrap: wrap; justify-content: center; }
+      .hero { padding: 55px 0 45px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="./">XIXO <span>Apps</span></a>
+      <div class="navlinks">
+        <a href="#aplicativos">Aplicativos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="mailto:xixolojaapps@gmail.com">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="container">
+        <div class="tag">Música • Educação • Tecnologia</div>
+        <h1>Tecnologia que acompanha<br>seu ritmo.</h1>
+        <p>
+          Aplicativos para estudar música, aprender
+          e tornar suas atividades mais simples.
+          Conheça as soluções da XIXO Apps.
+        </p>
+        <a class="button" href="#aplicativos">
+          Explorar aplicativos
+        </a>
+      </div>
+    </div>
+
+    <section id="aplicativos" class="container">
+      <h2>Nossos aplicativos</h2>
+      <p class="subtitle">Conheça nossos projetos.</p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">🎹</div>
+          <h3>Organista Estudos CCB</h3>
+          <p>
+            Uma plataforma de estudos musicais
+            com métodos, exercícios, hinos
+            e acompanhamento de progresso.
+          </p>
+          <span class="status">Em preparação</span>
+        </article>
+
+        <article class="card">
+          <div class="symbol">🎼</div>
+          <h3>CCB Hinos Play</h3>
+          <p>
+            Estude hinos com instrumentos,
+            reprodução musical e recursos
+            para praticar suas partes.
+          </p>
+          <span class="status">Em desenvolvimento</span>
+        </article>
+
+        <article class="card">
+          <div class="symbol">💼</div>
+          <h3>Soluções para negócios</h3>
+          <p>
+            Novos aplicativos para lojas,
+            assistência técnica, serviços
+            e gerenciamento comercial.
+          </p>
+          <span class="status">Futuros projetos</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="container">
+      <div class="about">
+        <h2>Sobre a XIXO Apps</h2>
+        <p>
+          A XIXO Apps desenvolve soluções digitais
+          com foco em simplicidade, organização
+          e facilidade de uso.
+        </p>
+        <p>
+          Nosso principal foco é a educação musical,
+          com espaço para expandir para outras áreas.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>XIXO Apps</strong>
+      <p>Aplicativos e soluções digitais.</p>
+      <p>Contato: xixolojaapps@gmail.com</p>
+      <p>© 2026 XIXO Apps.</p>
+    </div>
+  </footer>
+</body>
+</html>
